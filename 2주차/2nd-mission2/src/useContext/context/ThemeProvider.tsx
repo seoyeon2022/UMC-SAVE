@@ -1,11 +1,11 @@
 import { createContext, type PropsWithChildren, useContext, useState } from "react";
 
-export enum THEME {
-    LIGHT = "LIGHT",
-    DARK = "DARK",
-}
+export const THEME = {
+    LIGHT: "LIGHT",
+    DARK: "DARK",
+} as const;
 
-type TTheme = THEME.LIGHT | THEME.DARK; //THEME의 LIGHT 또는 DARK 모드 될 수 있음
+type TTheme = (typeof THEME)[keyof typeof THEME]; //THEME의 LIGHT 또는 DARK 모드 될 수 있음
 
 interface IThemeContext {
     theme: TTheme; //현재 테마 상태

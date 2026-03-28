@@ -3,11 +3,14 @@ import Navbar from "./Navbar";
 import ThemeContent from "./ThemeContent";
 
 export default function ContextPage() {
-    <ThemeProvider>
-        <div className="flex flex-col items-center justify-center min-h-screen"></div>
-        <Navbar />
-        <main className="flex-1 w-full">
-            <ThemeContent />
-        </main>
-    </ThemeProvider>
+    return (
+        <ThemeProvider>
+            <div className="flex flex-col items-center justify-center min-h-screen"></div>
+                <Navbar />
+                <main className="flex-1 w-full">
+                <ThemeContent />
+            </main>
+        </ThemeProvider>
+    );
 }
+

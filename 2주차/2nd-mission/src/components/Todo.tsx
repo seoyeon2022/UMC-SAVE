@@ -10,7 +10,7 @@ const Todo = ()  => {
         <div className="todo-container">
             <h1 className="todo-container__header">KITE TODO</h1>
             <TodoForm/>
-            <div className="todo-container">
+            <div className="todo-container__content">
                 <TodoList title="할 일" 
                 todos={todos} 
                 buttonLabel="완료" 

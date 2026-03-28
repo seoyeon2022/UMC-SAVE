@@ -1,10 +1,10 @@
 import './App.css';
 import ContextPage from './useContext/ContextPage';
 
-export function App() {
+export default function App() {
   return (
     <>
-    <ContextPage />
+      <ContextPage />
     </>
   );
 }
