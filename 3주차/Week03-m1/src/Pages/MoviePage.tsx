@@ -6,6 +6,8 @@ import MovieCard from "../components/MovieCard";
 export default function MoviePage() {
     const [movies, setMovies] = useState<Movie[]>([]); //Movie만 들어갈 수 있는 배열
 
+    
+
     useEffect(() => {
         const fetchMovies = async () => {
             const { data } = await axios.get<MovieResponse>(
